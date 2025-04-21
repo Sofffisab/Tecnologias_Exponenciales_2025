@@ -1,32 +1,49 @@
-# defino tablero nxn y pido valores del juego
-cantidadCasillas: int = int(input("Ingrese la cantidad de casillas: "))
+# defino datos y pido valores del juego
+cantidadFilasyColumnas: int = int(input("Ingrese la cantidad de filas y columnas: "))
+cantidadCasillas = cantidadFilasyColumnas * cantidadFilasyColumnas
 cantidadDisparos: int = int(input("Ingrese la cantidad de disparos de esta partida: "))
 cantidadBarcos: int = int(input("Ingrese la cantidad de barcos a colocar: "))
 
 #poner valores maximos de cada variable
 
-if (cantidadCasillas > 15 or cantidadCasillas <= 6):
+if (cantidadCasillas > 225 or cantidadCasillas < 25):
     print("Valor no valido")
 
-if (cantidadDisparos > 45 or cantidadDisparos <= 0):
+if (cantidadDisparos > 50 or cantidadDisparos <= 0 or cantidadDisparos > cantidadCasillas):
     print("Valor no valido")
 
 if (cantidadBarcos > 15 or cantidadBarcos <= 0):
     print("Valor no valido")
 
 # creo tabla con valores nxn
-tablero: list[list[bool]] =
-list = cantidadCasillas
-print(tablero)
-"""
-# elegir posicion del barco y tamano de cada uno (falta)
-for cantidadBarcos():
-    tamanoBarco: int = int(input("Ingrese un tamano para el barco entre 1 y 3: "))
-    barco: int = int(input("Ingrese la ubicacion del barco a colocar en X: "))
-    barco: int = int(input("Ingrese la ubicacion del barco a colocar en Y: "))
+
+    tablero: list[list[str]] = [["" for _ in range(cantidadFilasyColumnas)] for _ in range(cantidadFilasyColumnas)]
+
+# averiguamos como hacer esto por una recomendacion de gemini y luego, al buscarlo, leyendo documentacion en https://stackoverflow.com/questions/66425508/what-is-the-meaning-of-for-in-range
+# Asi crea cantidad de filas y columnas segun el valor dado por la variable cantidadFilasyColumnas repitiendo el "loop" esa cantidad especifica de veces dada
+
+# elegir posicion del barco 
+
+for cantidadBarcos
+        tamanobarco: int = int(input("Ingrese el tamano del barco entre 1 y 3: "))
+        if (tamanobarco < 1 or tamanobarco > 3):
+            print("Valor no valido")
+        barcox: int = int(input("Ingrese la columna para el barco: "))
+        barcoy: int = int(input("Ingrese la fila para el barco: "))
+
+        tablero[barcoy - 1][barcox - 1] = "B"
+
+        if (tamanobarco >= 2):
+            tablero[barcoy][barcox] = "B"
+
+        if (tamanobarco = 3):
+            tablero[barcoy + 1][barcox + 1] = "B"
+
+
+'''
  
 
-#si usuario no elije que sea true es false
+# elegir casills y si hay barco decir que es true
 for list in range(cantidadCasillas):
 
     if (hayBarco = True):
@@ -44,4 +61,4 @@ if (disparosQueQuedan === cantidadDisparos):
     print(tablero)
     print("Acertaste " tirosBien "tiros")
 
-"""
+
