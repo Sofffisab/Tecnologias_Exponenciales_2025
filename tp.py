@@ -57,7 +57,8 @@ for cantidadDisparos
 
 
 # dos jugadores
-
+    # Hay que hacer dos tableros por jugador, uno para los barcos y otro para los disparos (se printea despues)
+    
 
 # Mostrar cuantos disparos estaban bien y mal y mostrar tablero final
 
