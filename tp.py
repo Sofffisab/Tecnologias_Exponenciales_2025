@@ -60,7 +60,9 @@ for cantidadDisparos
     # Hay que hacer dos tableros por jugador, uno para los barcos y otro para los disparos (se printea despues)
     
 
+
 # Mostrar cuantos disparos estaban bien y mal y mostrar tablero final
 
 for cantidadFilasyColumnas
-    if (tablerone[][] != True )
+    if (tablerone[][] != True or tablerone[][] != False or tablerone[][] = B):
+        tablerone[][] = false
