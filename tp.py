@@ -58,7 +58,9 @@ for cantidadDisparos
 # dos jugadores (FALTA)
 
 
+
 # Mostrar cuantos disparos estaban bien y mal y mostrar tablero final
 
 for cantidadFilasyColumnas
-    if (tablerone[][] != True )
+    if (tablerone[][] != True or tablerone[][] != False or tablerone[][] = B):
+        tablerone[][] = false
