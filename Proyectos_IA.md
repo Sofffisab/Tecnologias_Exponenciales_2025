@@ -1,6 +1,6 @@
 # Trabajo Práctico Investigación de Proyectos de IA
 
-A partir de la actividad planteada en clase, completar el siguiente (Google Forms)[] con alguno de los siguientes formatos detallando lo investigado acorde a un proyecto de AI/ML.
+A partir de la actividad planteada en clase, completar el siguiente [Google Forms](https://forms.gle/NuJtDavFVvRhDWHfA) con alguno de los siguientes formatos detallando lo investigado acorde a un proyecto de AI/ML.
 
 Formatos:
 

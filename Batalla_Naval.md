@@ -31,7 +31,7 @@ Recomendaciones:
 
 ## Formato de entrega
 
-Entregar un archivo `naval-Apellido1-Apellido2-Apellido3.py` que contenga el código del programa en el siguiente formulario de [Google Forms]().
+Entregar un archivo `naval-Apellido1-Apellido2-Apellido3.py` que contenga el código del programa en el siguiente formulario de [Google Forms](https://forms.gle/mUgYyqNbKf6Txb9M7).
 
 El código debe estar comentado y contar con Type Hints. Cualquier referencia por fuera de lo visto en clase debe ser incluida en los comentarios (links a StackOverflow, docs, conversaciones de ChatGPT, etc).
 
