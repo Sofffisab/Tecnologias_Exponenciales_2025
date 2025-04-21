@@ -34,10 +34,10 @@ for cantidadBarcos
         tablero[barcoy - 1][barcox - 1] = "B"
 
         if (tamanobarco >= 2):
-            tablero[barcoy][barcox] = "B"
+            tablero[barcoy][barcox - 1] = "B"
 
         if (tamanobarco = 3):
-            tablero[barcoy + 1][barcox + 1] = "B"
+            tablero[barcoy + 1][barcox - 1] = "B"
 
 
  
@@ -45,7 +45,7 @@ for cantidadBarcos
 
 tablerone = tablero
 
-for cantidadDisparos
+for n in range (cantidadDisparos):
     casillaSeleccionadax: int = int(input("Ingrese la columna de la casilla: "))
     casillaSeleccionaday: int = int(input("Ingrese la fila de la casilla: "))
 
@@ -61,6 +61,15 @@ for cantidadDisparos
 
 # Mostrar cuantos disparos estaban bien y mal y mostrar tablero final
 
-for cantidadFilasyColumnas
+for cantidadFilasyColumnas:
     if (tablerone[][] != True or tablerone[][] != False or tablerone[][] = B):
         tablerone[][] = false
+
+
+print("\nTablero de resultados de los disparos:")
+for fila in tablerone:
+    print(fila)
+
+print("\nAcertaste {aciertos} de {cantidadDisparos} tiros.")
+
+# ayuda de google 
