@@ -40,7 +40,6 @@ for cantidadBarcos
             tablero[barcoy + 1][barcox + 1] = "B"
 
 
-
  
 # elegir casillas y si hay barco decir que es true
 
@@ -56,13 +55,10 @@ for cantidadDisparos
         tablerone [casillaSeleccionaday - 1][casillaSeleccionadax - 1] = False
 
 
-# dos jugadores
+# dos jugadores (FALTA)
 
 
 # Mostrar cuantos disparos estaban bien y mal y mostrar tablero final
 
-if (disparosQueQuedan === cantidadDisparos):
-    print(tablero)
-    print("Acertaste " tirosBien "tiros")
-
-
+for cantidadFilasyColumnas
+    if (tablerone[][] != True )
