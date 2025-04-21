@@ -40,16 +40,20 @@ for cantidadBarcos
             tablero[barcoy + 1][barcox + 1] = "B"
 
 
-'''
+
  
+# elegir casillas y si hay barco decir que es true
 
-# elegir casills y si hay barco decir que es true
-for list in range(cantidadCasillas):
+tablerone = tablero
 
-    if (hayBarco = True):
-        tablero[list][list] = True
+for cantidadDisparos
+    casillaSeleccionadax: int = int(input("Ingrese la columna de la casilla: "))
+    casillaSeleccionaday: int = int(input("Ingrese la fila de la casilla: "))
+
+   if (tablerone [casillaSeleccionaday - 1][casillaSeleccionadax - 1] = B):
+        tablerone [casillaSeleccionaday - 1][casillaSeleccionadax - 1] = True
     else:
-        tablero[list][list] = False
+        tablerone [casillaSeleccionaday - 1][casillaSeleccionadax - 1] = False
 
 
 # dos jugadores
