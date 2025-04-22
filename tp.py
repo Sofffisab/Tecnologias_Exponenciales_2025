@@ -24,36 +24,39 @@ if (cantidadBarcos > 15 or cantidadBarcos <= 0):
 
 # elegir posicion del barco 
 
-for cantidadBarcos
+for _ in range(cantidadBarcos):
         tamanobarco: int = int(input("Ingrese el tamano del barco entre 1 y 3: "))
         if (tamanobarco < 1 or tamanobarco > 3):
             print("Valor no valido")
-        barcoX: int = int(input("Ingrese la columna para el barco: "))
-        barcoY: int = int(input("Ingrese la fila para el barco: "))
+        barcox: int = int(input("Ingrese la columna para el barco: "))
+        barcoy: int = int(input("Ingrese la fila para el barco: "))
 
-        tablero[barcoY - 1][barcoX - 1] = "B"  # B es barco
+        tablero[barcoy - 1][barcox - 1] = "B"  # B es barco
 
         if (tamanobarco >= 2):
 
             tablero[barcoy][barcox - 1] = "B"
 
-        if (tamanobarco = 3):
+        if (tamanobarco == 3):
             tablero[barcoy + 1][barcox - 1] = "B"
 
  
 # elegir casillas y si hay barco decir que es true
+tablerone = [fila[:] for fila in tablero] # Crear una copia independiente del tablero
 
-tablerone = tablero
+aciertos = 0 # Inicializar el contador de aciertos
 
 
 for n in range (cantidadDisparos):
     casillaSeleccionadax: int = int(input("Ingrese la columna de la casilla: "))
     casillaSeleccionaday: int = int(input("Ingrese la fila de la casilla: "))
 
-   if (tablerone [casillaSeleccionadaY - 1][casillaSeleccionadaX - 1] = B):
-        tablerone [casillaSeleccionadaY - 1][casillaSeleccionadaX - 1] = True
+   if (tablerone [casillaSeleccionadaY - 1][casillaSeleccionadaX - 1] == B):
+        tablerone [casillaSeleccionadaY - 1][casillaSeleccionadaX - 1] == True
+        aciertos += 1
     else:
-        tablerone [casillaSeleccionadaY - 1][casillaSeleccionadaX - 1] = False
+        tablerone [casillaSeleccionadaY - 1][casillaSeleccionadaX - 1] == False
+
 
 
 
@@ -64,9 +67,10 @@ for n in range (cantidadDisparos):
 
 # Mostrar cuantos disparos estaban bien y mal y mostrar tablero final
 
-for cantidadFilasyColumnas:
-    if (tablerone[][] != True or tablerone[][] != False or tablerone[][] = B):
-        tablerone[][] = false
+for i in range (cantidadFilasyColumnas):
+    for j in range(cantidadFilasyColumnas):
+        if (tablerone[i][j] != True and tablerone[i][j] != False or tablerone[i][j] == B):
+            tablerone[i][j] = false
 
 
 print("\nTablero de resultados de los disparos:")
