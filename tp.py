@@ -51,11 +51,12 @@ for n in range (cantidadDisparos):
     casillaSeleccionadax: int = int(input("Ingrese la columna de la casilla: "))
     casillaSeleccionaday: int = int(input("Ingrese la fila de la casilla: "))
 
-   if (tablerone [casillaSeleccionadaY - 1][casillaSeleccionadaX - 1] == B):
-        tablerone [casillaSeleccionadaY - 1][casillaSeleccionadaX - 1] == True
+   
+   if (tablerone [casillaSeleccionaday - 1][casillaSeleccionadax - 1] == "B"):
+        tablerone [casillaSeleccionaday - 1][casillaSeleccionadax - 1] == True
         aciertos += 1
     else:
-        tablerone [casillaSeleccionadaY - 1][casillaSeleccionadaX - 1] == False
+        tablerone [casillaSeleccionaday - 1][casillaSeleccionadax - 1] == False
 
 
 
