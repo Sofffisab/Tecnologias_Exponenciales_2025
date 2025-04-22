@@ -28,35 +28,38 @@ for cantidadBarcos
         tamanobarco: int = int(input("Ingrese el tamano del barco entre 1 y 3: "))
         if (tamanobarco < 1 or tamanobarco > 3):
             print("Valor no valido")
-        barcox: int = int(input("Ingrese la columna para el barco: "))
-        barcoy: int = int(input("Ingrese la fila para el barco: "))
+        barcoX: int = int(input("Ingrese la columna para el barco: "))
+        barcoY: int = int(input("Ingrese la fila para el barco: "))
 
-        tablero[barcoy - 1][barcox - 1] = "B"
+        tablero[barcoY - 1][barcoX - 1] = "B"  # B es barco
 
         if (tamanobarco >= 2):
+
             tablero[barcoy][barcox - 1] = "B"
 
         if (tamanobarco = 3):
             tablero[barcoy + 1][barcox - 1] = "B"
-
 
  
 # elegir casillas y si hay barco decir que es true
 
 tablerone = tablero
 
+
 for n in range (cantidadDisparos):
     casillaSeleccionadax: int = int(input("Ingrese la columna de la casilla: "))
     casillaSeleccionaday: int = int(input("Ingrese la fila de la casilla: "))
 
-   if (tablerone [casillaSeleccionaday - 1][casillaSeleccionadax - 1] = B):
-        tablerone [casillaSeleccionaday - 1][casillaSeleccionadax - 1] = True
+   if (tablerone [casillaSeleccionadaY - 1][casillaSeleccionadaX - 1] = B):
+        tablerone [casillaSeleccionadaY - 1][casillaSeleccionadaX - 1] = True
     else:
-        tablerone [casillaSeleccionaday - 1][casillaSeleccionadax - 1] = False
+        tablerone [casillaSeleccionadaY - 1][casillaSeleccionadaX - 1] = False
 
 
-# dos jugadores (FALTA)
 
+# dos jugadores
+    # Hay que hacer dos tableros por jugador, uno para los barcos y otro para los disparos (se printea despues)
+    
 
 
 # Mostrar cuantos disparos estaban bien y mal y mostrar tablero final
